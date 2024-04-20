@@ -23,4 +23,10 @@ function copyPassword (){
     passwordBox.select();
     document.execCommand("copy")
 }
+passwordBox.addEventListener('click', function(e){
+    if(e.target == passwordBox){
+        passwordBox.select();
+        document.execCommand("copy")
+    }
+})
 
